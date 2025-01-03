@@ -2,20 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({ blog }) => {
-  const {
-    id,
-    title,
-    image,
-    category,
-    author,
-    authorPic,
-    published_date,
-    reading_time,
-    content,
-    tags,
-  } = blog;
+  const { id, title, image, author, authorPic, published_date, content, tags } =
+    blog;
   return (
-    <Link className="block rounded w-full lg:flex mb-10" to="">
+    <Link className="block rounded w-full lg:flex mb-10" to={`/blogs/${id}`}>
       <div
         className="h-48 lg:w-48 flex-none bg-cover text-center overflow-hidden opacity-75"
         style={{
