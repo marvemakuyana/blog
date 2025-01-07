@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Search from "./Search";
 
 const Navbar = () => {
   return (
@@ -7,6 +8,9 @@ const Navbar = () => {
       <Link to="/" className="px-2 lg:px-0 uppercase font-bold text-purple-800">
         LOGO
       </Link>
+      <div>
+        <Search />
+      </div>
       <ul className="inline-flex items-center">
         <li className="px-2 md:px-4">
           <Link

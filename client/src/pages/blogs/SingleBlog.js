@@ -4,6 +4,7 @@ import { BiCommentDetail } from "react-icons/bi";
 import { AiOutlineHeart, AiOutlineArrowRight } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchBlog } from "../../redux/features/singleBlog/BlogSlice";
+import PopularBlogs from "./PopularBlogs";
 
 const SingleBlog = () => {
   const { id } = useParams();
@@ -13,6 +14,7 @@ const SingleBlog = () => {
 
   useEffect(() => {
     dispatch(fetchBlog(id));
+    window.scrollTo(0, 0);
   }, [dispatch, id]);
 
   console.log(id);
@@ -119,6 +121,7 @@ const SingleBlog = () => {
       </div>
 
       {/* <PopularBlog /> */}
+      <PopularBlogs />
     </article>
   );
 };
