@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import SingleBlog from "./pages/blogs/SingleBlog";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
             <Route path="/blogs/:id" element={<SingleBlog />}></Route>
           </Routes>
         </main>
+        <Footer />
       </BrowserRouter>
-      <footer>footer</footer>
     </div>
   );
 }

@@ -121,7 +121,7 @@ const SingleBlog = () => {
       </div>
 
       {/* <PopularBlog /> */}
-      <PopularBlogs />
+      <PopularBlogs tags={category} currentBlogId={id} />
     </article>
   );
 };
