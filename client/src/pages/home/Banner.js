@@ -69,8 +69,7 @@ const Banner = () => {
             Science
           </span>
           <h2 className="text-3xl font-semibold text-gray-100 leading-tight">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </h2>
           <div className="flex mt-3">
             <img
